@@ -14,7 +14,8 @@ main {
 
 /* intro section */
 .intro-main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 80%;
     background-color: #161616;
     justify-content: center;
@@ -47,3 +48,26 @@ main {
 
 
 /* intro section responsive*/
+@media (max-width:670px) {
+    .intro-main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .intro-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .intro-img {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
