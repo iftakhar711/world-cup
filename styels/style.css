@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    /* margin: 0%; */
+    /* box-sizing: border-box; */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* intro section */
+.intro-main {
+    display: flex;
+    width: 80%;
+    background-color: #161616;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.intro-text {
+    color: azure;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 150px;
+
+
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: red;
+    color: beige;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: yellowgreen;
+    color: rgb(11, 11, 11);
+
+}
+
+
+/* intro section responsive*/
