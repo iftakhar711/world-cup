@@ -53,6 +53,9 @@ main {
 }
 
 /* nav blogs section */
+.nav-blogs {
+    display: flex;
+}
 
 .nav-main {
     display: flex;
@@ -81,9 +84,6 @@ main {
     margin: 15px;
 }
 
-.nav-blogs {
-    display: flex;
-}
 
 .blogs {
     display: grid;
@@ -101,19 +101,15 @@ main {
 
 .time-mess {
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
-/* .time {
-    align-items: center;
-} */
 .image {
     width: 250px;
     height: 150px;
 }
 
-/* intro section responsive*/
+/*  section responsive*/
+/* mobile view */
 @media (max-width:670px) {
     .intro-main {
         display: flex;
@@ -155,4 +151,61 @@ main {
         margin-left: 50px;
         background-color: rgb(250, 255, 255);
     }
+}
+
+
+/* tablet view */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .intro-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+
+    .nav-blogs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        margin-top: 50px;
+
+    }
+
+    .nav-main {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        background-color: rgb(255, 255, 255);
+        width: 65%;
+        position: absolute;
+        margin-top: -30px;
+
+
+    }
+
+    .button {
+        text-decoration: none;
+        width: 200px;
+        height: 44px;
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+
+
+    }
+
+    .button-1 {
+        text-decoration: none;
+        width: 200px;
+        height: 44px;
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+
+    }
+
 }
