@@ -96,6 +96,7 @@ main {
 .blog {
     width: 250px;
     height: 150px;
+
 }
 
 .time-mess {
@@ -134,5 +135,24 @@ main {
         margin-top: 20px;
         display: flex;
         justify-content: center;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 20px;
+    }
+
+    .nav-blogs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-main {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        background-color: rgb(250, 255, 255);
     }
 }
